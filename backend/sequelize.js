@@ -1,12 +1,12 @@
 const Sequelize = require("sequelize");
-
+require("dotenv").config();
 // Define the connection parameters
 const sequelize = new Sequelize(
   "defaultdb",
-  "avnadmin",
-  "AVNS_z8Xb1UAIHq78R0pooXJ",
+  process.env.USER,
+  process.env.PASS,
   {
-    host: "sahil-sql-intern-project.a.aivencloud.com",
+    host: process.env.HOST,
 
     port: 24239,
     dialect: "mysql",
