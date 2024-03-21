@@ -18,7 +18,6 @@ const Table = () => {
       stdin: "Another input for the code",
       published: "2024-03-20T16:00:00Z",
     },
-    // Add more dummy data objects as needed
   ];
 
   const handleNavigate = (id) => {
@@ -31,7 +30,9 @@ const Table = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/fetchall");
+        const response = await fetch(
+          "https://tuf-intern.onrender.com/api/fetchall"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }

@@ -4,14 +4,7 @@ const CodeSnippet = () => {
   const location = useLocation();
   const { id } = useParams();
   const [codeBlockData, setCodeBlockData] = useState({});
-  const username = "JohnDoe";
-  const code = `function greet() {
-    console.log('Hello, world!');
-  }`;
-  const codeLink = "https://example.com/code-snippet";
-  const stdin = "123";
-  const stdout = "Helo";
-  const time = "21March";
+
   const codeRef = useRef(null);
 
   const copyUrlToClipboard = () => {
@@ -29,7 +22,9 @@ const CodeSnippet = () => {
   useEffect(() => {
     const fetchCodeBlockData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/fetch/${id}`);
+        const response = await fetch(
+          `https://tuf-intern.onrender.com/api/fetch/${id}`
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch code block data");
         }

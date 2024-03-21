@@ -7,7 +7,7 @@ const MainPage = () => {
     username: "",
     sourcecode: "",
     stdin: "",
-    lang: 53, // Default language
+    lang: 53,
   });
 
   const handleChange = (e) => {
@@ -20,13 +20,16 @@ const MainPage = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/newcode", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://tuf-intern.onrender.com/api/newcode",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         setSuccessDialogOpen(true);
