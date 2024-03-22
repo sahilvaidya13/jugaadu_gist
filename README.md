@@ -40,3 +40,6 @@ Can add code with provided language(C++, Java, Python, Javascript) with standard
  - Aiven Database Hosting
  - Judge0 CE API
  - TailwindCSS
+
+
+Note - Backend is hosted on free tier service, kindl wait for the responses, or stream again. It will fetch data.
