@@ -117,7 +117,7 @@ const Table = () => {
                     display: data.length === 0 ? "table-row" : "none",
                   }}
                 >
-                  <td colSpan={5}>No data available</td>
+                  <td colSpan={5}>Loading.....</td>
                 </tr>
               </tbody>
             </table>

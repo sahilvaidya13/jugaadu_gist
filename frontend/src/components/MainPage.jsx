@@ -92,7 +92,7 @@ const MainPage = () => {
                 <h1 className="text-white font-jetbrains">Select Language</h1>
                 <select
                   className="block w-full px-3 py-2  border border-gray-300 text-white font-jetbrains focus:outline-none bg-black"
-                  name="language"
+                  name="lang"
                   value={formData.lang}
                   onChange={handleChange}
                 >
