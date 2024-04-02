@@ -4,6 +4,7 @@
 
 Jugaadu Gist is a web application that allows users to add their username, stdin, and source code and submit it to the website. Users can also view the code posted by different users.
 
+URL - https://jugaadugist.netlify.app/
 ## Features
 
 - **Add Code**: Users can add their username, stdin, and source code to the website.
